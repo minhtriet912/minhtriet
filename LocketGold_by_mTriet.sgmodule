@@ -1,0 +1,17 @@
+#!name=Locket Custom Edition
+#!desc=Crack By NVMT | Tùy chỉnh Video & Caption cá nhân.
+
+[General]
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com, firebaseremoteconfig.googleapis.com
+
+[Script]
+# 1. Tùy chỉnh Feature, Video 60s & Caption cá nhân
+locket_remote = type=http-response, pattern=^https?:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-.*, script-path=(ĐIỀN LINK 1), requires-body=true, max-size=524288, timeout=60
+
+# 2. Xóa ETag Header chống dính Cache (by NVMT)
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=(ĐIỀN LINK 2), timeout=60
+
+# 3. Kích hoạt Gold & Ngày 09/12/2008 (by NMVT)
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=(ĐIỀN LINK 3), requires-body=true, max-size=-1, timeout=60
