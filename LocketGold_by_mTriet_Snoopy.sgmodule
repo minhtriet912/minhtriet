@@ -1,0 +1,25 @@
+#!name= LocketGold by mTriet
+#!desc= crack mọi app premium vip pro
+#!author=mTriet912
+#!homepage=https://note3s.top/notes/77536Z
+#!moduleUrl=raw.githubusercontent.com/minhtriet912/minhtriet/refs/heads/main/LocketGold_by_mTriet.sgmodule
+#!howtouse=shadowrocket NVMT
+#Shadowrocket Configuration - mTriet912 N.V.M.T
+
+#!name=Locket Custom Edition
+#!desc=Crack By NVMT | Tùy chỉnh Video & Caption cá nhân.
+
+[General]
+
+[MITM]
+hostname = %APPEND% api.revenuecat.com, firebaseremoteconfig.googleapis.com
+
+[Script]
+# 1. Tùy chỉnh Feature, Video 60s & Caption cá nhân
+locket_remote = type=http-response, pattern=^https?:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-.*, script-path=https://raw.githubusercontent.com/minhtriet912/minhtriet/refs/heads/main/Script1_snoopy.js, requires-body=true, max-size=524288, timeout=60
+
+# 2. Xóa ETag Header chống dính Cache (by NVMT)
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/minhtriet912/minhtriet/refs/heads/main/Script2.js, timeout=60
+
+# 3. Kích hoạt Gold & Ngày 09/12/2008 (by NMVT)
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/minhtriet912/minhtriet/refs/heads/main/Script3.js, requires-body=true, max-size=-1, timeout=60
