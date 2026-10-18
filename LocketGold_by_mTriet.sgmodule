@@ -13,5 +13,5 @@ locket_remote = type=http-response, pattern=^https?:\/\/firebaseremoteconfig\.go
 # 2. Xóa ETag Header chống dính Cache (by NVMT)
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/minhtriet912/minhtriet/refs/heads/main/Script2.js?token=GHSAT0AAAAAAEMU5J5MI7YYX7I4R25OG2SO2WUTRBA, timeout=60
 
-# 3. Kích hoạt Gold & Ngày 25/05/1111 (by NMVT)
+# 3. Kích hoạt Gold & Ngày 09/12/2008 (by NMVT)
 revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/minhtriet912/minhtriet/refs/heads/main/Script3.js?token=GHSAT0AAAAAAEMU5J5MRHLQIUHISI33BESW2WUTRUQ, requires-body=true, max-size=-1, timeout=60
