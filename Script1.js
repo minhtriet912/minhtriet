@@ -50,7 +50,7 @@ if (ua.includes("Locket")) {
             tag: "LOCKET GOLD",
             tag_gradient: true,
             tag_style: "gold_gradient",
-            title: "chúc mừng bạn ",
+            title: "CHÚC MỪNG BẠN ",
             feature_set: [
                 {
                     title: "✨✨✨✨✨",
