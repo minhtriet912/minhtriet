@@ -50,12 +50,12 @@ if (ua.includes("Locket")) {
             tag: "LOCKET GOLD",
             tag_gradient: true,
             tag_style: "gold_gradient",
-            title: "CHÚC MỪNG BẠN ",
+            title: "CHÚC MỪNG BẠN",
             feature_set: [
                 {
-                    title: "✨✨✨✨✨",
-                    body: "💛💛💛💛💛💛💛💛💛💛",
-                    imageURL: "https://i.ibb.co/Vcr5zX87/inbox.png"
+                    title: "Liên Hệ CSKH Ở Trên",
+                    body: "💛 Locket Gold by mTriet912 💛",
+                    imageURL: "https://i.ibb.co/xqD5zwwP/inbox-photoretrica-1.png"
                 
                 }
             ],
