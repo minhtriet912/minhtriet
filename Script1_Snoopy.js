@@ -54,7 +54,7 @@ if (ua.includes("Locket")) {
             feature_set: [
                 {
                     title: "Liên Hệ CSKH Ở Trên",
-                    body: "Locket Gold by mTriet912",
+                    body: "💛 Locket Gold by mTriet912 💛",
                     imageURL: "https://i.ibb.co/xqD5zwwP/inbox-photoretrica-1.png"
                 
                 }
