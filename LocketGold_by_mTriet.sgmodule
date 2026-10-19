@@ -15,7 +15,7 @@
 hostname = %APPEND% api.revenuecat.com, firebaseremoteconfig.googleapis.com
 
 [Script]
-# 1. Tùy chỉnh Feature, Video 60s & Caption cá nhân
+# 1. Tùy chỉnh Feature, Video 45s & Caption cá nhân
 locket_remote = type=http-response, pattern=^https?:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/locket-.*, script-path=(ĐIỀN LINK 1), requires-body=true, max-size=524288, timeout=60
 
 # 2. Xóa ETag Header chống dính Cache (by NVMT)
