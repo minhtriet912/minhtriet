@@ -463,7 +463,7 @@
                 entries["gold_active"] = "true";
                 entries["v2_refresh"] = "true";
 
-                // 9. Cấu hình khung viền widget ngoài màn hình chính (frame_ba_khi)
+                // 9. Cấu hình khung viền widget ngoài màn hình chính
                  Object.assign(obj.entries, {
                      widget_frame_event_max_images: "5",
                      android_widget_frame_event_enabled: "true",
